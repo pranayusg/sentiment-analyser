@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "9e49c4c1-f27e-4a78-97e6-37fbfd948d38",
+		"name": "Hackathon APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18194920"
+	},
+	"item": [
+		{
+			"name": "sentiment-analyzer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputText\": \"I'm  hppy with you. I am not happy though!\",\r\n    \"autoCorrection\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/s-analyzer/sentiment-analyzer",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "s-analyzer", "sentiment-analyzer"]
+				}
+			},
+			"response": []
+		}
+	]
+}
